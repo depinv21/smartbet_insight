@@ -19,11 +19,15 @@
             position: relative;
         }
         header img {
-            width: 200px;
+            width: 150px;
             height: auto;
             position: absolute;
             top: 10px;
             left: 20px;
+        }
+        header h1 {
+            font-size: 1.5em;
+            margin: 0;
         }
         nav {
             background-color: #444;
@@ -32,8 +36,9 @@
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
+            font-size: 1.2em;
         }
         .dropdown {
             display: inline-block;
@@ -98,9 +103,61 @@
         }
         .free-tips ul {
             list-style-type: none;
+            padding-left: 0;
         }
         .free-tips ul li {
             margin-bottom: 5px;
+        }
+
+        /* Estilos para hacer la página responsiva */
+        @media (max-width: 768px) {
+            header img {
+                width: 100px;
+                top: 5px;
+                left: 10px;
+            }
+            header h1 {
+                font-size: 1.2em;
+            }
+            nav a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
+            .dropdown-content {
+                min-width: 140px;
+            }
+            section {
+                padding: 10px;
+                margin: 10px 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 80px;
+                top: 5px;
+                left: 10px;
+            }
+            header h1 {
+                font-size: 1em;
+                margin-top: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1em;
+            }
+            .dropdown-content {
+                min-width: 100%;
+                position: relative;
+            }
+            section {
+                padding: 5px;
+                margin: 5px;
+            }
+            footer {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -118,7 +175,7 @@
         <a href="#suscripcion">Suscripciones</a>
         <div class="dropdown-content">
             <a href="data/index.html">Tips Premium</a>
-            <a href="data - VIP/index.html">Tips VIP</a>
+            <a href="data-VIP/index.html">Tips VIP</a>
         </div>
     </div>
     
